@@ -1,0 +1,10 @@
+{
+  "name": "style",
+  "description": "style",
+  "dependencies": {
+    "csso": "^3.5.1",
+    "node-sass": "^4.9.3",
+    "scss-tokenizer": "^0.3.0",
+    "scssfmt": "^1.0.6"
+  }
+}

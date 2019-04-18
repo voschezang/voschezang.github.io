@@ -1,0 +1,85 @@
+@import 'dimensions';
+@import 'transform';
+@import 'media';
+@import 'colors';
+
+body {
+  box-sizing: border-box;
+  background: #eee;
+  font-family: Helvetica, sans-serif;
+  // background: #000;
+  margin: 0;
+  height: 150vh;
+}
+
+//override defaults
+th {
+  font-weight: normal;
+}
+p,
+span,
+div,
+th,
+td,
+input {
+  font-size: 14px;
+}
+p,
+span,
+th,
+td {
+  padding: 5px $text-horizontal-padding;
+}
+
+input {
+  padding: 0.2em 0.5em;
+}
+
+/* h1, h2, h3, h4 { */
+/*     font-size: 24px; */
+/* } */
+
+@mixin primary-button() {
+  font-weight: bold;
+  color: $primary-color;
+  max-width: 100px;
+}
+
+
+.primary-butotn {
+  @include primary-button();
+}
+
+.page-content {
+  background: #000;
+  max-width: $page-content-width;
+  margin: 5vh auto 25vh;
+  padding: 10px 0;
+}
+
+.inner-content {
+}
+
+body .bg {
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  background-image: url("../img/flowfield_bw.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  // img {
+  //   width: 100%;
+  //   // &:hover {
+  //     // transform: scale(2);
+  //   // }
+  // }
+}
+
+@media only screen and (max-device-width: 1600px) {
+  body .bg img {
+    background-image: url("../img/flowfield_bw_90.jpg");
+    // @include transform-rotate(90deg);
+    // position: relative;
+  }
+}
