@@ -7,7 +7,7 @@ body {
   box-sizing: border-box;
   background: #eee;
   font-family: Helvetica, sans-serif;
-  // background: #000;
+  background: #000;
   margin: 0;
   height: 150vh;
 }
@@ -51,7 +51,7 @@ input {
 }
 
 .page-content {
-  background: #000;
+  position: relative;
   max-width: $page-content-width;
   margin: 5vh auto 25vh;
   padding: 10px 0;
@@ -76,10 +76,20 @@ body .bg {
   // }
 }
 
+video {
+  // object-fit: contain;
+  width: 100%;
+  height: auto;
+}
+
+
 @media only screen and (max-device-width: 1600px) {
   body .bg img {
     background-image: url("../img/flowfield_bw_90.jpg");
     // @include transform-rotate(90deg);
     // position: relative;
+  }
+  .page-content {
+    margin: 5vh auto 5vh;
   }
 }
