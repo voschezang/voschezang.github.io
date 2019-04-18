@@ -1,8 +1,4 @@
-.PHONY: sass js elm
-
-# npm-deps:
-# 	npm install
-
+.PHONY: sass js
 
 # js:
 # 	$(MAKE) -C js
