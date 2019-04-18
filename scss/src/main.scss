@@ -3,13 +3,15 @@
 @import 'media';
 @import 'colors';
 
+$n_items: 2;
+
 body {
   box-sizing: border-box;
   background: #eee;
   font-family: Helvetica, sans-serif;
   background: #000;
   margin: 0;
-  height: 150vh;
+  min-height: $n_items * 100vh;
 }
 
 //override defaults
@@ -61,19 +63,15 @@ input {
 }
 
 body .bg {
-  position: fixed;
+  position: relative;
   top: 0;
-  height: 100vh;
   width: 100vw;
-  background-image: url("../img/flowfield_bw.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  // img {
-  //   width: 100%;
-  //   // &:hover {
-  //     // transform: scale(2);
-  //   // }
-  // }
+  margin-bottom: 15vh;
+  // background-image: url("../img/flowfield_bw.jpg");
+  // &:hover {transform: scale(2);
+  img {
+    width: 100%;
+  }
 }
 
 video {
@@ -82,14 +80,21 @@ video {
   height: auto;
 }
 
-
-@media only screen and (max-device-width: 1600px) {
-  body .bg img {
-    background-image: url("../img/flowfield_bw_90.jpg");
-    // @include transform-rotate(90deg);
-    // position: relative;
+// desktop
+@media only screen and (min-device-width: 768px) {
+  body .bg {
+    background-image: url("../img/flowfield_bw.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    img {
+      display: none;
+    }
   }
   .page-content {
-    margin: 5vh auto 5vh;
+    // background: red;
   }
 }
+
+// touch
+// @media (pointer:coarse) {}
