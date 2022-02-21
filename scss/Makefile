@@ -1,8 +1,5 @@
 NODE_SASS := ./node_modules/.bin/node-sass
-CSSO := ~/.nvm/versions/node/v10.0.0/bin/csso
-# ./node_modules/.bin/csso
-# ~/.nvm/versions/node/v10.0.0/bin/csso
-# ~/.nvm/versions/node/v10.0.0/lib/node_modules/csso-cli/bin/csso
+CSSO := ./node_modules/.bin/csso
 SCSSFMT := ./node_modules/.bin/scssfmt
 
 all: build format

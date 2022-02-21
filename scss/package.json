@@ -1,10 +1,7 @@
 {
-  "name": "style",
-  "description": "style",
   "dependencies": {
-    "csso": "^3.5.1",
-    "node-sass": "^4.11.0",
-    "scss-tokenizer": "^0.3.0",
-    "scssfmt": "^1.0.6"
+    "csso-cli": "^3.0.0",
+    "node-sass": "^7.0.1",
+    "scssfmt": "^1.0.7"
   }
 }
