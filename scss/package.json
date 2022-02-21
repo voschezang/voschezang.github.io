@@ -2,6 +2,7 @@
   "dependencies": {
     "csso-cli": "^3.0.0",
     "node-sass": "^7.0.1",
-    "scssfmt": "^1.0.7"
+    "scssfmt": "^1.0.7",
+    "glob-parent": ">=5.1.2"
   }
 }
