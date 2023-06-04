@@ -12,6 +12,11 @@ body {
   background: #000;
   margin: 0;
   min-height: $n_items * 100vh;
+  color: 
+  p {
+      font-weight: bold;
+      color: white;
+  }
 }
 
 //override defaults
@@ -57,6 +62,10 @@ input {
   max-width: $page-content-width;
   margin: 5vh auto 25vh;
   padding: 10px 0;
+  p {
+      margin-top: 2em;
+      text-align: center;
+  }
 }
 
 .inner-content {

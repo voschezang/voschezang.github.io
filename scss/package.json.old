@@ -1,0 +1,8 @@
+{
+  "name": "style",
+  "description": "style",
+  "dependencies": {
+    "csso": "^5.0.2",
+    "node-sass": "^7.0.1"
+  }
+}
