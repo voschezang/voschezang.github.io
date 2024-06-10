@@ -1,6 +1,7 @@
 scss/package-lock.json
 *.DS_Store
 */node_modules/
+notebooks/.ipynb_checkpoints/
 
 
 # Compiled class file
