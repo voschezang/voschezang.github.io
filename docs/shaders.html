@@ -5,15 +5,43 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="css/main.css">
 
+<style>
+ul { padding-left: 2vw; padding-right: 2vw; margin: 0; list-style: none; display: inline-block; }
+div.menu ul li a { padding-left: 2vw; padding-right: 2vw; }
+ul li:first-child a { padding-left: 5vw; }
+ul li:last-child a { padding-right: 5vw; }
+ul li { display: inline-block; }
+ul li a { display: inline-block; color: #ccc; padding: 1em; text-decoration: none; }
+ul li a:hover { background='#555' }
+
+@media (min-width: 900px) {
+    ul.secondary { float: right; }
+}
+@media only screen and (max-width: 900px) {
+    ul { width: 100%; }
+    ul li a { padding-left: 0.2em; padding-right: 0.2em; }
+    ul li:first-child a { padding-left: 0.4em; padding-right: 0.4em; }
+}
+</style>
+
 <body>
   <div class="menu">
-    <ul style="list-style: none; display: inline-block;">
-      <li style="display: inline;">
-        <a href="index.html" onMouseOver="this.style.background='#555'" onMouseOut="this.style.background='#000'" style="color: #ccc; padding: 1em; text-decoration: none;">Home</a></li>
-      <li style="display: inline;">
-        <a href="Scientific-Computing-Models/"onMouseOver="this.style.background='#555'" onMouseOut="this.style.background='#000'" style="color: #ccc; padding: 1em; text-decoration: none;">🧪 Scientific Computing</a></li>
-      <li style="display: inline;">
-        <a href="shaders.html" onMouseOver="this.style.background='#555'" onMouseOut="this.style.background='#000'" style="color: #ccc; padding: 1em; text-decoration: none;">🎨 Shaders</a></li>
+    <ul>
+      <li><a href="index.html" onMouseOver="this.style.background='#555'" onMouseOut="this.style.background='#000'">Home</a></li>
+      <li><a href="Scientific-Computing-Models/" onMouseOver="this.style.background='#555'" onMouseOut="this.style.background='#000'">🧪 Scientific Computing</a></li>
+      <li><a href="shaders.html" onMouseOver="this.style.background='#555'" onMouseOut="this.style.background='#000'">🎨 Shaders</a></li>
+    </ul>
+    <ul class="secondary">
+      <li style="padding-left: 0.5em;"><a style="color: #9a9a9a;">Docs:</a></li>
+      <li>
+        <a href="https://github.com/voschezang/voschezang.github.io/blob/main/notebooks/lissajous.ipynb/"
+            onMouseOver="this.style.background='#555'" onMouseOut="this.style.background='#000'" target="_blank">Lissajous</a></li>
+      <li>
+        <a href="https://github.com/voschezang/voschezang.github.io/blob/main/notebooks/waves.ipynb/"
+            onMouseOver="this.style.background='#555'" onMouseOut="this.style.background='#000'" target="_blank">Waves</a></li>
+      <li>
+        <a href="https://github.com/voschezang/voschezang.github.io/blob/main/notebooks/particles.ipynb/"
+            onMouseOver="this.style.background='#555'" onMouseOut="this.style.background='#000'" target="_blank">Particles</a></li>
     </ul>
   </div>
 
