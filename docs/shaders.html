@@ -47,6 +47,23 @@ ul li a:hover { background='#555' }
 
   <div class="page-content" style="color: #efefef; padding: 0; max-width: 1200px;">
 
+
+    <div class="video">
+      <p>Infinite Spheres using Ray Marching</p>
+      <video width="720" controls loop autoplay muted preload="metadata" class="slower">
+        <source src="img/ray-marching-inf-spheres-long.mp4">
+        Video
+      </video>
+    </div>
+
+    <div class="video">
+      <p>Colorful Spheres using Ray Marching</p>
+      <video width="720" controls loop autoplay muted preload="metadata" class="slower">
+        <source src="img/ray-marching-inf-spheres.mp4">
+        Video
+      </video>
+    </div>
+
     <div class="video">
       <p>Lasers and particles</p>
       <video width="1200" controls loop autoplay muted preload="metadata">
@@ -80,5 +97,13 @@ ul li a:hover { background='#555' }
     </div>
 
   </div>
+
+<script>
+
+// slow down playback
+const videos = document.querySelectorAll('.slower');
+videos.forEach(video => { video.playbackRate = 0.75; });
+
+</script>
 </body>
 </html>
